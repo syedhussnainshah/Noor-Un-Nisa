@@ -1,3 +1,13 @@
 h1{
     color: pink!important;
 }
+.Wrapper{
+    width: 100%;
+    height: 50vh;
+    background-color: blue;
+}
+.Wrappers{
+    width: 50%;
+    height: 50vh;
+    background-color: yellow;
+}
