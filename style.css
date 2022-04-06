@@ -11,3 +11,12 @@ h1{
     height: 50vh;
     background-color: yellow;
 }
+#head {
+    background-color: blue;
+}
+
+
+
+.MainDiv {
+    height: 10vh;
+}
