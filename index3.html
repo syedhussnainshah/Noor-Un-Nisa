@@ -56,6 +56,41 @@
 
         }
     </style>
+    <style>
+        .maindiv {
+            background-color: blue;
+            height: 90vh;
+            width: 100%;
+            animation: myMove 5s infinite;
+        }
+
+        @keyframes myMove {
+            0% {
+                background-color: yellow;
+                width: 80%;
+            }
+
+            25% {
+                background-image: url("image/1.jpg");
+                width: 60%;
+                border-radius: 50%;
+            }
+
+            50% {
+                background-color: pink;
+                width: 40%;
+                height: 60vh;
+            }
+
+            75% {
+                background-color: blueviolet;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+    <div class="maindiv">
+
+    </div>
     <h1>Hello The World</h1>
 
 </body>
