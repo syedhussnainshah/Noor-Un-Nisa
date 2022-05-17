@@ -10,89 +10,42 @@
 
 <body>
     <style>
+        :root {
+            --MainColor: #48ff00;
+            --MainColorQuery: #ff7300;
+            --MargCustom: 50px;
+        }
+
         h1 {
-            background-color: aqua;
-            width: 100%;
-            transition: all 2s linear;
-            height: 20vh;
-            position: relative;
-        }
-
-        h1:hover {
-            background-color: brown;
-            color: white;
-            width: 50%;
-            height: 30vh;
-            font-size: 60px;
-        }
-
-        h1::before {
-            content: "";
-            position: absolute;
-            height: 10px;
-            width: 100%;
-            background-color: yellow;
-        }
-
-        h1:hover:before {
-            content: "";
-            position: absolute;
-            height: 10px;
-            width: 50%;
-            background-color: yellow;
-            transition: all 2s linear;
-
-        }
-
-        h1:hover:after {
-            content: "";
-            position: absolute;
-            height: 10px;
-            width: 50%;
-            background-color: rgb(13, 130, 62);
-            transition: all 2s linear;
-            bottom: 0;
-            left: 0;
-
-        }
-    </style>
-    <style>
-        .maindiv {
+            color: var(--MainColor);
+            padding: var(--MargCustom);
+            margin-top: var(--MargCustom);
             background-color: blue;
-            height: 90vh;
-            width: 100%;
-            animation: myMove 5s infinite;
         }
 
-        @keyframes myMove {
-            0% {
-                background-color: yellow;
-                width: 80%;
-            }
+        span {
+            background-color: var(--MainColor);
+        }
 
-            25% {
-                background-image: url("image/1.jpg");
-                width: 60%;
-                border-radius: 50%;
-            }
+        p {
+            background-color: var(--MainColor);
+        }
 
-            50% {
-                background-color: pink;
-                width: 40%;
-                height: 60vh;
-            }
-
-            75% {
-                background-color: blueviolet;
-                transform: rotate(360deg);
+        @media screen AND (max-width: 900px) {
+            span {
+                background-color: var(--MainColorQuery);
+                padding: var(--MargCustom);
             }
         }
     </style>
+
     <div class="maindiv">
 
     </div>
     <h1>Hello The World</h1>
-
+    <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi quo repellat, ex minus odit cum omnis animi
+        porro commodi esse ducimus, cumque sed et? Velit doloribus eum debitis ratione veritatis?</P>
+    <span>Helo</span>
 </body>
 
 </html>
